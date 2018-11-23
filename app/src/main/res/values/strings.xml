@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MasuyaMobileApp</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_simpan_lokasi">Map</string>
+    <string name="title_activity_realokasi">Map</string>
+
+    //tag json
+    <string name="tag_json_obj">json_obj_req</string>
+
+    <array name="gv_main_text">
+        <item>Informasi Barang</item>
+        <item>My Customer</item>
+        <item>History Penjualan</item>
+        <item>History Pembelian</item>
+        <item>Sales Order</item>
+        <item>Update Pricelist</item>
+        <item>Stock Opname</item>
+        <item>User Management</item>
+    </array>
+    <array name="gv_main_img">
+        <item>@drawable/informasi_barang_100</item>
+        <item>@drawable/customer_100</item>
+        <item>@drawable/history_penjualan_100</item>
+        <item>@drawable/history_pembelian_100</item>
+        <item>@drawable/sales_order_100</item>
+        <item>@drawable/update_price_100</item>
+        <item>@drawable/stock_opname_100</item>
+        <item>@drawable/user_manage_100</item>
+    </array>
+    <array name="gallery">
+        <item>@drawable/bg1</item>
+        <item>@drawable/bg2</item>
+        <item>@drawable/bg3</item>
+        <item>@drawable/bg4</item>
+        <item>@drawable/bg5</item>
+        <item>@drawable/bg6</item>
+        <item>@drawable/bg7</item>
+    </array>
+</resources>

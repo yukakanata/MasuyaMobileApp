@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_cart"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/icons8_shopping_cart_64"
+        android:layout_centerInParent="true"/>
+
+    <com.nex3z.notificationbadge.NotificationBadge
+        android:id="@+id/not_count"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toRightOf="@+id/img_cart"
+        android:layout_alignTop="@+id/img_cart"
+        android:layout_marginTop="-8dp"
+        android:layout_marginLeft="-16dp">
+
+    </com.nex3z.notificationbadge.NotificationBadge>
+
+</RelativeLayout>

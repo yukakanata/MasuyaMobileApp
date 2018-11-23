@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_informasi_barang"
+            android:icon="@drawable/informasi_barang_100"
+            android:title="Informasi Barang" />
+        <item
+            android:id="@+id/nav_mycustomer"
+            android:icon="@drawable/customer_100"
+            android:title="My Customer" />
+        <item
+            android:id="@+id/nav_history_penjualan"
+            android:icon="@drawable/history_penjualan_100"
+            android:title="History Penjualan" />
+        <item
+            android:id="@+id/nav_history_pembelian"
+            android:icon="@drawable/history_pembelian_100"
+            android:title="History Pembelian" />
+        <item
+            android:id="@+id/nav_sales_order"
+            android:icon="@drawable/sales_order_100"
+            android:title="Sales Order" />
+        <item
+            android:id="@+id/nav_update_pricelist"
+            android:icon="@drawable/update_price_100"
+            android:title="Update Pricelist" />
+        <item
+            android:id="@+id/nav_stock_opname"
+            android:icon="@drawable/stock_opname_100"
+            android:title="Stock Opname" />
+        <item
+            android:id="@+id/nav_user_management"
+            android:icon="@drawable/user_manage_100"
+            android:title="User Management" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_100"
+            android:title="Log out" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/exit_100"
+            android:title="Exit" />
+    </group>
+
+</menu>

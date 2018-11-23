@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar" type="id"></item>
+    <item name="nav_view" type="id"></item>
+    <item name="img_switch" type="id"></item>
+    <item name="collapsing_toolbar" type="id"></item>
+    <item name="app_bar_layout" type="id"></item>
+    <item name="rv_main" type="id"></item>
+    <!--<item name="nav_view" type="id"></item>
+    <item name="nav_view" type="id"></item>
+    <item name="nav_view" type="id"></item>
+    <item name="nav_view" type="id"></item>
+    <item name="nav_view" type="id"></item>
+    <item name="nav_view" type="id"></item>
+    <item name="nav_view" type="id"></item>
+    <item name="nav_view" type="id"></item>
+    <item name="nav_view" type="id"></item>
+    <item name="nav_view" type="id"></item>-->
+</resources>

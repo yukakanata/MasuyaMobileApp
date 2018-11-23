@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin_large"
+        android:paddingRight="@dimen/activity_horizontal_margin_large"
+        android:paddingTop="@dimen/activity_vertical_margin_large"
+        android:paddingBottom="@dimen/activity_vertical_margin_large"
+        android:background="@color/flatui_peter_river">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="User :"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+
+            <Spinner
+                android:id="@+id/spin_user"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Kota : "
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <Spinner
+            android:id="@+id/spin_kota"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Administrator"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/radio_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Manager"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/radio_supervisor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Supervisor"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/radio_bd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BD"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/radio_sales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sales"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/radio_warehouse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Warehouse"
+                android:textColor="@android:color/white"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_detail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Detail Hak Akses"
+                style="@style/button_style"/>
+
+            <Button
+                android:id="@+id/btn_simpan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:layout_marginLeft="10dp"
+                android:text="SIMPAN"
+                style="@style/button_style"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

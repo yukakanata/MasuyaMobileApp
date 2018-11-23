@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.yusuffahrudin.masuyamobileapp.history_pembelian.HistoryPembelianActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:minHeight="?attr/actionBarSize">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:orientation="vertical"
+        android:background="@color/flatui_peter_river"
+        android:padding="36dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/btn_date_dari"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:onClick="showDatePickerDialogFrom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/ic_date_black"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_top_corner"/>
+
+                <TextView
+                    android:id="@+id/tv_tgl_awal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Tgl Awal"
+                    android:textSize="22sp"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:background="@drawable/btn_bottom_corner"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_date_sampai"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:onClick="showDatePickerDialogTo"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/ic_date_black"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_top_corner"/>
+
+                <TextView
+                    android:id="@+id/tv_tgl_akhir"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Tgl Akhir"
+                    android:textSize="22sp"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:background="@drawable/btn_bottom_corner"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_nmbrg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:layout_marginTop="30dp"
+            android:hint="Kode / Nama Barang"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            style="@style/editText_style"/>
+
+        <EditText
+            android:id="@+id/edt_sup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:layout_marginTop="30dp"
+            android:hint="Kode / Nama Supplier"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            style="@style/editText_style"/>
+
+        <Button
+            android:id="@+id/btn_cari"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/input_layout_nmsup"
+            android:layout_marginTop="30dp"
+            style="@style/button_style"
+            android:text="Cari"
+            android:textSize="24sp"
+            android:onClick="cariHistoryClick" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
